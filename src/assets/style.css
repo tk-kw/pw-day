@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .ani-delay-1 {
+        animation-delay: 0.4s;
+    }
+    .ani-delay-2 {
+        animation-delay: 0.8s;
+    }
+    .ani-delay-3 {
+        animation-delay: 1.2s;
+    }
+    .ani-delay-4 {
+        animation-delay: 1.6s;
+    }
+    .ani-delay-5 {
+        animation-delay: 2s;
+    }
+    .ani-delay-6 {
+        animation-delay: 2.4s;
+    }
+    .abs-center {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .btn-shadow {
+        box-shadow: 5px 5px 0 #333;
+        transition: 0.3s;
+    }
+    .btn-shadow:hover {
+        transform: translateY(5px);
+        box-shadow: 0 0 0 #333;
+    }
+    .loading.pop {
+        opacity: 0;
+    }
+    .loaded.pop {
+        opacity: 1;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .hide {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: 0.7s ease-in-out;
+    }
+
+    .loading {
+        opacity: 0;
+    }
+    
+    .loaded {
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+    }
+
+    .loading.scale{
+        transform: scale(0);
+    }
+    
+    .loaded.scale{
+        transform: scale(1);
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+
+    .loading.up{
+        transform: translateY(60px);
+    }
+    
+    .loaded.up{
+        transform: translateY(0);
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .loading.down{
+        transform: translateY(-60px);
+    }
+    
+    .loaded.down{
+        transform: translateY(0);
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .loading.right{
+        transform: translateX(80px);
+    }
+    
+    .loaded.right{
+        transform: translateX(0);
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .loading.left{
+        transform: translateX(-80px);
+    }
+    
+    .loaded.left{
+        transform: translateX(0);
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .loading.scale-in-bottom {
+        opacity: 0;
+    }
+
+    .loaded.scale-in-bottom{
+        opacity: 1;
+    }
+
+}
